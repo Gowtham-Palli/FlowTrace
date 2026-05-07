@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    margin: 0;
+    min-height: 100vh;
+    @apply bg-page font-sans text-[18px] font-normal leading-relaxed text-[#4A4A4A] antialiased;
+  }
+
+  @media (max-width: 767px) {
+    body {
+      font-size: 15.3px;
+    }
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+}
+
+/* Range slider — 6px track, 20px thumb, accent fill */
+@layer components {
+  .ds-range {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    border-radius: 9999px;
+    background: linear-gradient(
+      to right,
+      var(--accent, #6b3fa0) 0%,
+      var(--accent, #6b3fa0) var(--fill-pct, 0%),
+      #e5e5e5 var(--fill-pct, 0%),
+      #e5e5e5 100%
+    );
+  }
+
+  .ds-range:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--accent, #6b3fa0);
+    outline-offset: 2px;
+    border-radius: 9999px;
+  }
+
+  .ds-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 9999px;
+    background: #ffffff;
+    border: 2px solid var(--accent, #6b3fa0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    margin-top: -7px;
+    position: relative;
+  }
+
+  .ds-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 9999px;
+    background: #ffffff;
+    border: 2px solid var(--accent, #6b3fa0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
+
+  .ds-range::-moz-range-track {
+    height: 6px;
+    border-radius: 9999px;
+    background: #e5e5e5;
+  }
+
+  .layer-page-enter {
+    animation: layerFadeUp 200ms ease-out both;
+  }
+
+  @keyframes layerFadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
