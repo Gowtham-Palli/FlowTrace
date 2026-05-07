@@ -178,7 +178,11 @@ It can be used for:
 
 # Author
 
-Developed by Sindhol
+23095030 - Chinthireddy Vishal Reddy
+23095068 - Palli Gowtham
+23095072 - Pendyala Sri Sai Chandana Aslesh
+23095073 - Pentyala Abhishek Preetham
+23095102 - Sindhol Hemachandra
 
 ---
 
