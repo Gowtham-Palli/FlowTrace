@@ -178,18 +178,13 @@ It can be used for:
 
 # Author
 
-Roll Number
-Name
-23095030
-Chinthireddy Vishal Reddy
-23095068
-Palli Gowtham
-23095072
-Pendyala Sri Sai Chandana Aslesh
-23095073
-Pentyala Abhishek Preetham
-23095102
-Sindhol Hemachandra
+## Team Members
+
+1. **23095030** - Chinthireddy Vishal Reddy  
+2. **23095068** - Palli Gowtham  
+3. **23095072** - Pendyala Sri Sai Chandana Aslesh  
+4. **23095073** - Pentyala Abhishek Preetham  
+5. **23095102** - Sindhol Hemachandra
 
 ---
 
