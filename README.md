@@ -176,8 +176,6 @@ It can be used for:
 
 ---
 
-# Author
-
 ## Team Members
 
 1. **23095030** - Chinthireddy Vishal Reddy  
